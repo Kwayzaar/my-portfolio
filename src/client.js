@@ -1,8 +1,8 @@
-import sanityclient from '@sanity/client'
-import { markChanged } from 'immer/dist/internal'
+import sanityClient from '@sanity/client'
 
 export default sanityClient({
-  // also find PJ at manage.sanity.io
+  // also find ProjId at manage.sanity.io
   projectId: "oc1i75ya",
-  dataset: "production"
+  dataset: "production",
+  apiVersion: '2021-07-13'
 })
